@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-+N4RAqR5s1Seyz7c0KULoA6fHdPSBQZJD6b+dGc1vOH6I4Gm5Vv0E4LkV2AcZLNKZz4fY7CM+U0xkGQpLrjK9g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+  </style>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                miColor: '#ff6347',
+            },
+               boxShadow: {
+        'super-dark': '0 25px 50px rgba(0,0,0,0.9)',
+        },
+            }
+        }
+        }
+    </script>
+<style>
+  @font-face {
+    font-family: 'BubbleGum';
+    src: url('./fonts/Bubblegum.ttf') format('truetype');
+  }
+
+  .font-bubblegum {
+    font-family: 'BubbleGum', cursive;
+  }
+</style>
+
+</head>
+<body class="bg-blue-300">
+<nav class="sticky top-0 z-50 bg-yellow-50 flex flex-col md:flex-row w-full justify-between px-6 py-4 h-auto md:h-28 items-center md:px-32 shadow-md">
+  <img class="w-20 rounded-full mb-3 md:mb-0" src="assets/img/Perruno’sLogo.png" alt="Logo Perruno's">
+
+  <div class="flex flex-wrap justify-center gap-4 md:gap-12 text-sm md:text-xl font-mono font-bold text-[#4c6dbe] items-center">
+    <a href="index.html?filter=todos" class="filter-btn">Inicio</a>
+<a href="index.html?filter=perro" class="filter-btn">Perrito</a>
+<a href="index.html?filter=gato" class="filter-btn">Gatitos</a>
+    <a class="hover:scale-105 hover:text-black transition" href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+
+    <section class="w-full bg-[#ff862f]">
+      <div>
+        <img class="mx-auto hidden md:block" src="assets/img/bannerPc.png" alt="Banner PC">
+        <img class="mx-auto block md:hidden" src="assets/img/bannerTlfn1.png" alt="Banner Móvil">
+      </div>
+    </section>
+
+    <section class="bg-yellow-50 gap-y-12 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5">
+        <div class="flex flex-col items-center min-w-[20%]">
+            <img class="h-48 mb-5 rounded-full" src="assets/img/amor inconal 2.png" alt="">
+            <div class="w-[250px]">
+                <p class="text-gray-500">Debemos alimentar a nuestra mascota diariamente, preferiblemente con comida para perros. Evitemos la comida casera y las sobras, ya que pueden ocasionarle daño.</p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center min-w-[20%]">
+            <img class="h-48 mb-5 rounded-full" src="assets/img/amor inconal.png" alt="">
+            <div class="w-[250px]">
+                <p class="text-gray-500">Ante todo, debemos tener claro que una mascota es un ser vivo y no un juguete. Por lo tanto, debemos respetarla y brindarle todo nuestro cariño mediante juegos y paseos.</p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center min-w-[20%]">
+            <img class="h-48 mb-5 rounded-full" src="assets/img/Cuidados .png" alt="">
+            <div class="w-[250px]">
+                <p class="text-gray-500">Recuerda cumplir rigurosamente con el calendario de vacunación y desparasitación de tu mascota. Si notas síntomas de enfermedad, acude de inmediato al veterinario.</p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center min-w-[20%]">
+            <img class="h-48 mb-5 rounded-full" src="assets/img/Tiempo de calidad .png" alt="">
+            <div class="w-[250px]">
+                <p class="text-gray-500">Nunca permitas que tu perro deambule libremente por la calle, coma desperdicios o rebusque en la basura. Y jamás lo abandones. Recuerda que tú eres su responsable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contenedorAnimales" class="flex flex-wrap justify-center gap-8 m-10 max-w-[1368px] mx-auto px-5"></section>
+
+    <footer id="contacto" class="h-screen flex flex-col items-center justify-around text-center px-4 md:flex-row md:h-[50%] md:max-w-[80%] md:mx-auto md:p-6">
+      <div class="flex flex-col items-center md:order-2">
+          <img class="w-32 h-32 mb-12 rounded-full shadow-lg" src="assets/img/Perruno’sLogo.png" alt="Logo de Perruno's">
+          <h2 class="text-5xl font font-bubblegum text-[#4c6dbe]">Perruno's</h2>
+          <img class="w-80 mt-5" src="assets/img/Patitas.png" alt="">
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex w-[300px] justify-around text-5xl text-[#ff862f] md:order-2 md:my-4">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram hover:text-pink-600 transition"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube hover:text-red-600 transition"></i>
+            </a>
+            <a href="mailto:contacto@perrunos.com" aria-label="Email">
+                <i class="fas fa-envelope hover:text-green-600 transition"></i>
+            </a>
+            <a href="https://goo.gl/maps/UbicacionEjemplo" target="_blank" aria-label="Ubicación">
+                <i class="fas fa-map-marker-alt hover:text-purple-600 transition"></i>
+            </a>
+        </div>
+        <div class="text-[#4c6dbe] font-semibold leading-7 my-8 md:order-3 md:my-1 flex flex-col">
+          <a href="#contenedorAnimales" data-filter="todos" class="filter-btn hover:scale-105 hover:text-black transition">Inicio</a>
+          <a href="#contenedorAnimales" data-filter="perro" class="filter-btn hover:scale-105 hover:text-black transition">Perrito</a>
+          <a href="#contenedorAnimales" data-filter="gato" class="filter-btn hover:scale-105 hover:text-black transition">Gatitos</a>
+        </div>
+        <p class="text-[#4c6dbe] text-2xl font-bold">CENTRO DE ADOPCIÓN</p>
+      </div>
+    </footer>
+
+    <p class="text-[#4c6dbe] text-center">Desarrollado por Rober Yanyi 🐾</p>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
