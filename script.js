@@ -44,4 +44,3 @@ botonesFiltro.forEach(boton => {
 // Al cargar la página
 const filtroInicial = getQueryParam("filter") || "todos";
 renderAnimales(filtroInicial);
-document.getElementById("contenedorAnimales").scrollIntoView({ behavior: "smooth" });
