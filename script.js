@@ -3,8 +3,16 @@ import { animales } from "./js/animales.js";
 const contenedor = document.getElementById("contenedorAnimales");
 
 function renderAnimales(filtro = "todos") {
+  const tiposValidos = ["todos", "perro", "gato"];
+  if (!tiposValidos.includes(filtro)) filtro = "todos";
+
   contenedor.innerHTML = "";
   const filtrados = filtro === "todos" ? animales : animales.filter(a => a.tipo === filtro);
+
+  if (filtrados.length === 0) {
+    contenedor.innerHTML = `<p class="text-center text-2xl font-bold">No hay mascotas para mostrar.</p>`;
+    return;
+  }
 
   filtrados.forEach(animal => {
     contenedor.innerHTML += `
